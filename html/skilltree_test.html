@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTRPG Skill Tree</title>
+<link rel="stylesheet" href="../css/skill.css">
+</head>
+<body>
+
+<!-- Toggle Panel Button -->
+<button id="togglePanelBtn" class="toggle-button">Toggle Panel</button>
+
+<!-- Description Panel -->
+<div id="descriptionPanel" class="description-panel hidden">
+  <h2>Select a skill</h2>
+  <p>Click a skill to see its description here.</p>
+</div>
+
+<!-- Skill Tree Container -->
+<div class="skill-tree-container">
+  <div class="skill-tree" id="skillTree">
+    <svg id="lines"></svg>
+
+    <!-- Row 0 -->
+    <div class="skill-row">
+      <div class="skill-node" data-id="0" data-prereq="1" data-unlocked="false" data-description="The Sello del Mundo grants you basic control over the world's energies.">
+        <span class="skill-name">Sello Prueba</span>
+        <button class="skill-button">Info</button>
+      </div>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="skill-row">
+      <div class="skill-node" data-id="1" data-unlocked="true" data-description="The Sello del Mundo grants you basic control over the world's energies.">
+        <span class="skill-name">Sello del Mundo</span>
+        <button class="skill-button">Info</button>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="skill-row">
+      <div class="skill-node" data-id="2" data-prereq="1" data-unlocked="false" data-requirements="Complete Training" data-description="Increases your mastery over weight and density, allowing manipulation of heavy objects.">
+        <span class="skill-name">Eratema de Peso</span>
+        <button class="skill-button">Info</button>
+      </div>
+      <div class="skill-node" data-id="3" data-prereq="1" data-unlocked="false" data-description="Gives control over materials, letting you reshape and strengthen matter.">
+        <span class="skill-name">Eratema de Materia</span>
+        <button class="skill-button">Info</button>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="skill-row">
+      <div class="skill-node" data-id="4" data-prereq="2" data-unlocked="false" data-description="Enhances your ability to manipulate movement and kinetic energy.">
+        <span class="skill-name">Eratema de Movimiento</span>
+        <button class="skill-button">Info</button>
+      </div>
+      <div class="skill-node" data-id="5" data-prereq="3" data-unlocked="false" data-description="Provides mastery over stone and rock, allowing you to create barriers or weapons.">
+        <span class="skill-name">Eratema de Roca</span>
+        <button class="skill-button">Info</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Buttons -->
+<button id="resetBtn" class="reset-button">Reset Tree</button>
+<button id="exportBtn" class="export-button">Export Tree</button>
+<button id="importBtn" class="import-button">Import Tree</button>
+<input type="file" id="importFile" class="import-file" accept=".json">
+
+<!-- JS -->
+<script src="../js/skill.js"></script>
+
+<a href="../index.html" id="homeBtn" title="Home">🏠</a>
+<a href="Skills.html" id="backBtn" title="Back">←</a>
+
+</body>
+</html>

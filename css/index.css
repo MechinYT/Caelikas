@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Fette;
+    src: url(../fonts/FetteSteinschrift.ttf);
+}
+
+html{
+    background-color: rgb(58, 92, 112);
+}
+
+.tit{
+    background-color: rgb(22, 45, 74);
+    border-radius: 15px;
+}
+
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    background-color: rgb(22, 45, 74);
+    margin-top: 10px;
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Fette;
+    font-style: normal;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(18, 38, 62);
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 20px;
+}
+
+ul li{
+    float:none;
+}
+ul li a{
+    display: block;
+    color: wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    background-color: #111;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 30px;
+    padding: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.landing{
+    background-color: rgb(41, 41, 54);
+    width: 50%;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.landing h2{
+    color: white;
+    margin: 0;
+    background-color: rgb(29, 29, 40);
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.landing p{
+    padding-bottom: 30px;
+    color: white;
+    font-size: 1rem;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(29, 31, 31);
+    color: aliceblue;
+    text-align: center;
+}
