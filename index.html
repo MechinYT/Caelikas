@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caelikas</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body>
     <!--Esto es el título y el menú de navegación. 
     Se pueden añadir más páginas añadiendo más elementos li-->
-    <div class=tit>
-        <h1 class="tit">Caelikas</h1>
-    <ul>
+    <div class="tit">
+      <h1 class="tit">Caelikas</h1>
+      <ul>
         <li><a href="html/mundo.html">Mundo</a></li>
         <li><a href="html/historia.html">Historia</a></li>
         <li><a href="html/planos.html">Planos</a></li>
@@ -19,25 +20,81 @@
         <li><a href="html/Dioses.html">Dioses</a></li>
         <li><a href="html/Skills.html">Skills</a></li>
         <li><a href="html/password.html">Secretos</a></li>
-    </ul>
+      </ul>
     </div>
-<div class="flex-container">
-    <div id="changelog" class="landing">
-        <h2>Changelog</h2>
-        <p>El mundo de Caelikas es una cosa to chula con muchas cosas</p>
+
+    <div class="flex-container" id="hermetics">
+      <div class="landing" id="mundo">
+        <h2>Mundo</h2>
+        <a href="html/semilanding/mundo.html"><img src="assets/images/mapCaelikas.png" alt=""></a>
+        <p>Descúbrelo todo sobre el mundo de Orionil: ¡El planeta de Caelikas, los planos, y mucho más!</p>
+      </div>
+      <div class="landing" id="historia">
+        <h2>Historia</h2>
+        <a href="html/semilanding/historia.html"><img src="assets/images/book.jpg" alt="https://es.pinterest.com/pin/860257966363777678"></a>
+        <p>Toda la historia, desde el inicio del universo, pasando por guerras, y llegando hasta la actualidad</p>
+      </div>
+      <div class="landing" id="religion">
+        <h2>Religión</h2>
+        <a href="html/semilanding/religion.html"><img src="assets/images/Nil.png" alt=""></a>
+        <p>Aprende sobre todos los dioses, religiones y cultos de Caelikas</p>
+      </div>
+      <div class="landing" id="magia">
+        <h2>Magia</h2>
+        <a href="html/semilanding/magia.html"><img src="assets/images/somalita.png" alt=""></a>
+        <p>Eratemas, Tinta de Criso, y mucho más en este apartado todo sobre la magia en Orionil</p>
+      </div>
+      <div class="landing" id="criaturas">
+        <h2>Criaturas</h2>
+        <a href="html/semilanding/magia.html"><img src="assets/images/coralino.png" alt=""></a>
+        <p>Variantes, animales, bestias y Runáceas. Todo lo que habita en Caelikas</p>    
+      </div>
+      <div class="landing" id="clutter">
+        <h2>Otros</h2>
+        <a href="html/semilanding/otros.html"><img src="assets/images/clutter.jpg" alt="https://www.artstation.com/artwork/v2QQGx"></a>
+        <p>Un poco de todo, y bastante de nada.</p>    
+      </div>
     </div>
-    <div id="welcome" class="landing">
-        <h2>¡Bienvenido a Caelikas!</h2>
-        <p>El mundo de Caelikas es una cosa to chula con muchas cosas</p>
+
+    <div class="flex-container" id="ttrpg">
+      <div class="landing" id="sistema">
+        <h2>Sistema de Juego</h2>
+        <div class="sistema_div">
+            <a href="html/semilanding/sistema.html"><img src="assets/images/promesa.png" alt=""></a>
+        </div>
+        <p>Todo lo básico para jugar a Promesa RPG</p>    
+      </div>
+      <div class="landing" id="ficha_img">
+        <h2>Creación de Personaje</h2>
+        <div class="sistema_div">
+            <a href="html/semilanding/creacion_personaje.html"><img src="assets/images/ficha.png" alt=""></a>
+        </div>
+        <p>Todo lo básico para jugar a Promesa RPG</p>    
+      </div>
+      <div class="landing" id="inventario_landing">
+        <h2>Inventario</h2>
+        <div class="sistema_div">
+            <a href="html/semilanding/inventario.html"><img src="assets/images/backpack.jpg" alt=""></a>
+        </div>
+        <p>Espada de madera, armadura de tela, en toda la mochila hay solo una poción.</p>    
+      </div>
     </div>
-    <div id="naving" class="landing">
-        <h2>¡Bienvenido a Caelikas!</h2>
-        <p>El mundo de Caelikas es una cosa to chula con muchas cosas</p>
+
+    <div id="navBtn">
+      <button id="menuToggle" class="menu-button">☰</button>
+      <div id="menuOptions" class="menu-options hidden">
+        <a href="index.html">Home</a>
+        <a href="./html/Skills.html">Skills</a>
+      </div>
     </div>
-</div>    
-    
+
     <footer>
-        <p>Todo Caelikas y Promesa pertenecen a <a href="https://x.com/MechinYT">Mechin</a></p>
+      <p>
+        Todo Caelikas y Promesa pertenecen a
+        <a href="https://x.com/MechinYT">Mechin</a>
+      </p>
     </footer>
-</body>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>

@@ -3,6 +3,11 @@
     src: url(../fonts/FetteSteinschrift.ttf);
 }
 
+@font-face {
+    font-family: monofonto;
+    src: url(../fonts/monofonto\ rg.otf);
+}
+
 html{
     background-color: rgb(58, 92, 112);
 }
@@ -10,6 +15,8 @@ html{
 .tit{
     background-color: rgb(22, 45, 74);
     border-radius: 15px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 
@@ -21,7 +28,6 @@ h1{
     padding-top: 50px;
     color: rgb(255, 255, 255);
     font-family: Fette;
-    font-style: normal;
 }
 
 ul{
@@ -37,13 +43,9 @@ ul{
     margin-bottom: 20px;
 }
 
-ul li{
-    float:none;
-}
 ul li a{
     display: block;
     color: wheat;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -61,12 +63,122 @@ ul li a:hover{
     margin: 0 auto;
 }
 
+#hermetics{
+    background-color: #111;
+    border-radius: 25px;
+}
+
+#ttrpg{
+    background-color: #111;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+#mundo img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 10% 20%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+#historia img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 10% 70%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+#religion img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+#magia img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+#criaturas img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+#clutter img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+.sistema_div{
+    width: 100%;
+    height: 200px;
+    background: #333;
+}
+
+#inventario_landing .sistema_div{
+    width: 100%;
+    height: 200px;
+    background: #000000;
+}
+
+#sistema img{
+    width: 35%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+#ficha_img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 10%;
+    background: #333;
+    flex-shrink: 0;
+}
+
+#inventario_landing img{
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 10%;
+    background: #000000;
+    flex-shrink: 0;
+}
+
+#pdfimg{
+    width: 50%;
+}
+
 .landing{
     background-color: rgb(41, 41, 54);
     width: 50%;
     margin: 0;
     padding-top: 0;
     padding-bottom: 20px;
+    padding-left: 15;
     text-align: center;
     border-radius: 15px;
 }
@@ -82,9 +194,9 @@ ul li a:hover{
 }
 
 .landing p{
-    padding-bottom: 30px;
     color: white;
     font-size: 1rem;
+    padding: 0 15px 0px 15px;
 }
 
 footer{
@@ -95,4 +207,71 @@ footer{
     background-color: rgb(29, 31, 31);
     color: aliceblue;
     text-align: center;
+}
+
+/* Navigation Button */
+#navBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.menu-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #130f29;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 30%;
+}
+
+.menu-button:hover{
+    background-color: #2f275a;
+    transform: scale(1.1);
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.menu-options{
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #28293d;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(27, 34, 107, 0.4);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-options.hidden{
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.menu-options a{
+    color: wheat;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: #362f54;
+    transition: background-color 0.2s;
+    font-family: monofonto;
+    text-align: center;
+
+}
+
+.menu-options a:hover{
+    background-color: #7263b4;
 }
